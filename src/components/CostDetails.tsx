@@ -1,14 +1,9 @@
 import React from 'react';
-import {
-  Text,
-  View,
-  StyleSheet,
-  TouchableOpacity,
-  SafeAreaView,
-  Dimensions,
-} from 'react-native';
-import {changeToggleStatus} from './state-management/actions/actions';
+import {Text, View, StyleSheet, TouchableOpacity} from 'react-native';
+import {changeToggleStatus} from '../state-management/actions/actions';
 import {useDispatch} from 'react-redux';
+import GroupPlan from './GroupPlan';
+import DevicePlan from './DevicePlan';
 
 interface Props {
   modalHeaderString?: string;
@@ -36,10 +31,12 @@ export default (props: Props) => {
   };
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>{modalHeaderString}</Text>
       <TouchableOpacity style={styles.closeButton} onPress={closeModal}>
-        <Text>Close</Text>
+        <Text style={styles.closeText}>Close</Text>
       </TouchableOpacity>
+      <Text style={styles.text}>{modalHeaderString}</Text>
+      <GroupPlan />
+      <DevicePlan />
     </View>
   );
 };
@@ -49,14 +46,21 @@ const styles = StyleSheet.create({
     borderColor: 'green',
     borderWidth: 3,
     flex: 1,
-    // justifyContent: 'flex-start',
-    // alignItems: 'flex-end',
-    // flexDirection: 'column',
+    justifyContent: 'flex-start',
+    flexDirection: 'column',
+    paddingLeft: 24,
+    borderRadius: 10,
   },
   closeButton: {
-    marginTop: 20,
-    marginRight: 30,
-    borderWidth: 1,
+    marginRight: 22,
+    marginTop: 14,
+    alignItems: 'flex-end',
   },
-  text: {},
+  text: {
+    color: 'black',
+  },
+  closeText: {
+    fontSize: 14,
+    color: '#0057B8',
+  },
 });

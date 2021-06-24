@@ -1,6 +1,6 @@
 import React, {ReactElement} from 'react';
 import {View, StyleSheet, Button, Modal, SafeAreaView} from 'react-native';
-import {changeToggleStatus} from './state-management/actions/actions';
+import {changeToggleStatus} from '../state-management/actions/actions';
 import {useDispatch, useSelector} from 'react-redux';
 import CostDetails from './CostDetails';
 
@@ -11,7 +11,8 @@ export default (): ReactElement => {
     <View style={styles.container}>
       <Modal
         animationType="slide"
-        presentationStyle={'overFullScreen'}
+        presentationStyle={'fullScreen'}
+        // presentationStyle?: 'fullScreen' | 'pageSheet' | 'formSheet' | 'overFullScreen';
         visible={isModalVisible}
         onRequestClose={() => {
           dispatch(changeToggleStatus(!isModalVisible));
@@ -35,5 +36,8 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    borderRadius: 10,
+    borderWidth: 3,
+    borderColor: 'red',
   },
 });
