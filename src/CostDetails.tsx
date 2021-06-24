@@ -1,5 +1,12 @@
 import React from 'react';
-import {Text, View, StyleSheet, TouchableOpacity} from 'react-native';
+import {
+  Text,
+  View,
+  StyleSheet,
+  TouchableOpacity,
+  SafeAreaView,
+  Dimensions,
+} from 'react-native';
 import {changeToggleStatus} from './state-management/actions/actions';
 import {useDispatch} from 'react-redux';
 
@@ -39,17 +46,17 @@ export default (props: Props) => {
 
 const styles = StyleSheet.create({
   container: {
+    borderColor: 'green',
+    borderWidth: 3,
     flex: 1,
-    justifyContent: 'flex-start',
-    alignItems: 'flex-end',
-    flexDirection: 'column',
+    // justifyContent: 'flex-start',
+    // alignItems: 'flex-end',
+    // flexDirection: 'column',
   },
   closeButton: {
     marginTop: 20,
     marginRight: 30,
     borderWidth: 1,
   },
-  text: {
-
-  }
+  text: {},
 });

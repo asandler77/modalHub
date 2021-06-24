@@ -1,5 +1,5 @@
 import React, {ReactElement} from 'react';
-import {View, StyleSheet, Button, Modal, Text} from 'react-native';
+import {View, StyleSheet, Button, Modal, SafeAreaView} from 'react-native';
 import {changeToggleStatus} from './state-management/actions/actions';
 import {useDispatch, useSelector} from 'react-redux';
 import CostDetails from './CostDetails';
@@ -16,7 +16,9 @@ export default (): ReactElement => {
         onRequestClose={() => {
           dispatch(changeToggleStatus(!isModalVisible));
         }}>
-        <CostDetails modalHeaderString={'Cost details'} />
+        <SafeAreaView style={{flex: 1}}>
+          <CostDetails modalHeaderString={'Cost details'} />
+        </SafeAreaView>
       </Modal>
       <Button
         title="Open"
