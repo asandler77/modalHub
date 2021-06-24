@@ -16,7 +16,7 @@ export default (): ReactElement => {
         onRequestClose={() => {
           dispatch(changeToggleStatus(!isModalVisible));
         }}>
-        <CostDetails />
+        <CostDetails modalHeaderString={'Cost details'} />
       </Modal>
       <Button
         title="Open"
