@@ -12,7 +12,6 @@ export default (): ReactElement => {
       <Modal
         animationType="slide"
         presentationStyle={'fullScreen'}
-        // presentationStyle?: 'fullScreen' | 'pageSheet' | 'formSheet' | 'overFullScreen';
         visible={isModalVisible}
         onRequestClose={() => {
           dispatch(changeToggleStatus(!isModalVisible));

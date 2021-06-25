@@ -35,6 +35,7 @@ export default (props: Props) => {
         <Text style={styles.closeText}>Close</Text>
       </TouchableOpacity>
       <Text style={styles.text}>{modalHeaderString}</Text>
+      <Text style={{marginBottom: 52}}>Mobile share plus(SM) 9GB</Text>
       <GroupPlan />
       <DevicePlan />
     </View>
@@ -48,16 +49,20 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'flex-start',
     flexDirection: 'column',
-    paddingLeft: 24,
+    paddingHorizontal: 24,
     borderRadius: 10,
   },
   closeButton: {
     marginRight: 22,
     marginTop: 14,
     alignItems: 'flex-end',
+    marginBottom: 47,
   },
   text: {
     color: 'black',
+    lineHeight: 20,
+    marginBottom: 8,
+    borderWidth: 1,
   },
   closeText: {
     fontSize: 14,
