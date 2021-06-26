@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* modalHubTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* modalHubTests.m */; };
-		054DC1CDEDB3C4D75CEAC0FE /* libPods-modalHub.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BD416BA8300BE2290C7EA88 /* libPods-modalHub.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		18D6C0165DCA0EC43D3E486A /* libPods-modalHub-modalHubTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A103522F00A8AF1155B2559 /* libPods-modalHub-modalHubTests.a */; };
+		24577AB12FD11F4A69FA7248 /* libPods-modalHub.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5D240BC9483E5217DA5FAC6 /* libPods-modalHub.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		990827519810B3CEF9CF008E /* libPods-modalHub-modalHubTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4547E290056764E49BCA732 /* libPods-modalHub-modalHubTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,19 +30,21 @@
 		00E356EE1AD99517003FC87E /* modalHubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = modalHubTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* modalHubTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = modalHubTests.m; sourceTree = "<group>"; };
+		0A103522F00A8AF1155B2559 /* libPods-modalHub-modalHubTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-modalHub-modalHubTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07F961A680F5B00A75B9A /* modalHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = modalHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = modalHub/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = modalHub/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = modalHub/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = modalHub/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = modalHub/main.m; sourceTree = "<group>"; };
+		3CBB99DD1CA06A4200530EC5 /* Pods-modalHubTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-modalHubTests.release.xcconfig"; path = "Target Support Files/Pods-modalHubTests/Pods-modalHubTests.release.xcconfig"; sourceTree = "<group>"; };
 		52B70056FCB02ED10C42E251 /* Pods-modalHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-modalHub.debug.xcconfig"; path = "Target Support Files/Pods-modalHub/Pods-modalHub.debug.xcconfig"; sourceTree = "<group>"; };
 		60EE97FD5FAFB1E995DCB1A8 /* Pods-modalHub-modalHubTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-modalHub-modalHubTests.debug.xcconfig"; path = "Target Support Files/Pods-modalHub-modalHubTests/Pods-modalHub-modalHubTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = modalHub/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99085CD4F523DF259A95BC0D /* Pods-modalHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-modalHub.release.xcconfig"; path = "Target Support Files/Pods-modalHub/Pods-modalHub.release.xcconfig"; sourceTree = "<group>"; };
-		9BD416BA8300BE2290C7EA88 /* libPods-modalHub.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-modalHub.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4547E290056764E49BCA732 /* libPods-modalHub-modalHubTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-modalHub-modalHubTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD2022065D41E0A91B9D6A8D /* Pods-modalHub-modalHubTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-modalHub-modalHubTests.release.xcconfig"; path = "Target Support Files/Pods-modalHub-modalHubTests/Pods-modalHub-modalHubTests.release.xcconfig"; sourceTree = "<group>"; };
+		BE9D95D0F9DDBD143C2E21D6 /* Pods-modalHubTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-modalHubTests.debug.xcconfig"; path = "Target Support Files/Pods-modalHubTests/Pods-modalHubTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D5D240BC9483E5217DA5FAC6 /* libPods-modalHub.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-modalHub.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -51,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				990827519810B3CEF9CF008E /* libPods-modalHub-modalHubTests.a in Frameworks */,
+				18D6C0165DCA0EC43D3E486A /* libPods-modalHub-modalHubTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				054DC1CDEDB3C4D75CEAC0FE /* libPods-modalHub.a in Frameworks */,
+				24577AB12FD11F4A69FA7248 /* libPods-modalHub.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +105,8 @@
 				99085CD4F523DF259A95BC0D /* Pods-modalHub.release.xcconfig */,
 				60EE97FD5FAFB1E995DCB1A8 /* Pods-modalHub-modalHubTests.debug.xcconfig */,
 				AD2022065D41E0A91B9D6A8D /* Pods-modalHub-modalHubTests.release.xcconfig */,
+				BE9D95D0F9DDBD143C2E21D6 /* Pods-modalHubTests.debug.xcconfig */,
+				3CBB99DD1CA06A4200530EC5 /* Pods-modalHubTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -112,8 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				9BD416BA8300BE2290C7EA88 /* libPods-modalHub.a */,
-				A4547E290056764E49BCA732 /* libPods-modalHub-modalHubTests.a */,
+				D5D240BC9483E5217DA5FAC6 /* libPods-modalHub.a */,
+				0A103522F00A8AF1155B2559 /* libPods-modalHub-modalHubTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -160,8 +164,8 @@
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				C881CFBFE8348FFAC23D33A2 /* [CP] Embed Pods Frameworks */,
-				05D35990DC91030E84A6D7E2 /* [CP] Copy Pods Resources */,
+				189395A9A0E6689FD871B92A /* [CP] Embed Pods Frameworks */,
+				0E342B14E0D85C11EF33308D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -183,8 +187,8 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				0B2BE3D9C03DA4EC152A60E4 /* [CP] Embed Pods Frameworks */,
-				99F3BA0D580905A92C83DB35 /* [CP] Copy Pods Resources */,
+				A9D1EF4DF3512E349801E607 /* [CP] Embed Pods Frameworks */,
+				2ACB83FFA730279C14500F85 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,7 +269,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		05D35990DC91030E84A6D7E2 /* [CP] Copy Pods Resources */ = {
+		0E342B14E0D85C11EF33308D /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -282,24 +286,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-modalHub-modalHubTests/Pods-modalHub-modalHubTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		0B2BE3D9C03DA4EC152A60E4 /* [CP] Embed Pods Frameworks */ = {
+		189395A9A0E6689FD871B92A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-modalHub/Pods-modalHub-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-modalHub-modalHubTests/Pods-modalHub-modalHubTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-modalHub/Pods-modalHub-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-modalHub-modalHubTests/Pods-modalHub-modalHubTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-modalHub/Pods-modalHub-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-modalHub-modalHubTests/Pods-modalHub-modalHubTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		99F3BA0D580905A92C83DB35 /* [CP] Copy Pods Resources */ = {
+		2ACB83FFA730279C14500F85 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -314,6 +318,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-modalHub/Pods-modalHub-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9D1EF4DF3512E349801E607 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-modalHub/Pods-modalHub-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-modalHub/Pods-modalHub-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-modalHub/Pods-modalHub-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AE54053BC27727396950430A /* [CP] Check Pods Manifest.lock */ = {
@@ -336,23 +357,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C881CFBFE8348FFAC23D33A2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-modalHub-modalHubTests/Pods-modalHub-modalHubTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-modalHub-modalHubTests/Pods-modalHub-modalHubTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-modalHub-modalHubTests/Pods-modalHub-modalHubTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D90A80896C3658B8AECA1510 /* [CP] Check Pods Manifest.lock */ = {
