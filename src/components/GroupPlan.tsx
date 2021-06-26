@@ -4,16 +4,23 @@ import CollapsiblePlan from './CollapsiblePlan';
 
 export default (): ReactElement => {
   return (
-    <View style={{flexDirection: 'row'}}>
-      <View style={styles.container}>
-        <Text style={{fontSize: 12, height: 16}}>Group Plan</Text>
-        <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
+    <View>
+      <Text style={{fontSize: 12, height: 16}}>Group Plan</Text>
+      <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
+        <View
+          style={{
+            flexDirection: 'row',
+            justifyContent: 'space-between',
+            borderWidth: 1,
+            borderColor: 'green',
+            flex: 1,
+          }}>
           <Text style={{fontSize: 16, height: 22}}>Charges</Text>
           <Text style={{fontSize: 16, height: 22}}>$20</Text>
         </View>
-      </View>
-      <View>
-        <CollapsiblePlan />
+        <View>
+          <CollapsiblePlan />
+        </View>
       </View>
     </View>
   );
@@ -24,6 +31,6 @@ const styles = StyleSheet.create({
     borderWidth: 3,
     // justifyContent: 'space-between',
     flexDirection: 'column',
-      flex: 1
+    flex: 1,
   },
 });
