@@ -9,8 +9,8 @@ export default (props: Props): ReactElement => {
   return (
     <View style={styles.container}>
       <AnimatedCollapsibleView show={props.isOpen} customStyle={{flex: 1}}>
-        <Text>Device Charge</Text>
-        <Text>Device Charge 2</Text>
+        <Text>Charge</Text>
+        <Text>Charge 2</Text>
       </AnimatedCollapsibleView>
     </View>
   );

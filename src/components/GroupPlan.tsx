@@ -2,6 +2,7 @@ import React, {ReactElement, useState} from 'react';
 import {Text, View, StyleSheet, Image, TouchableOpacity} from 'react-native';
 import {LineDivider} from './LineDivider';
 import {AnimatedCollapsibleView} from './AnimatedCollapsibleView';
+import CollapsiblePlan from './CollapsiblePlan';
 
 const chevron = require('../assets/images/right_arrow.png');
 
@@ -40,11 +41,7 @@ export default (): ReactElement => {
           {renderChevron()}
         </TouchableOpacity>
       </View>
-      <View style={{flex: 1}}>
-        <AnimatedCollapsibleView show={isOpen} customStyle={{flex: 1}}>
-          <Text>Kuku</Text>
-        </AnimatedCollapsibleView>
-      </View>
+      <CollapsiblePlan isOpen={isOpen} />
       <LineDivider width={'100%'} color={'grey'} marginTop={16} />
     </View>
   );
