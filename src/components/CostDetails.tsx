@@ -62,7 +62,6 @@ const styles = StyleSheet.create({
     color: 'black',
     lineHeight: 20,
     marginBottom: 8,
-    borderWidth: 1,
   },
   closeText: {
     fontSize: 14,

@@ -1,36 +1,63 @@
-import React, {ReactElement} from 'react';
-import {Text, View, StyleSheet} from 'react-native';
-import CollapsiblePlan from './CollapsiblePlan';
+import React, {ReactElement, useState} from 'react';
+import {Text, View, StyleSheet, Image, TouchableOpacity} from 'react-native';
+import {LineDivider} from './LineDivider';
+import {AnimatedCollapsibleView} from './AnimatedCollapsibleView';
+
+const chevron = require('../assets/images/right_arrow.png');
 
 export default (): ReactElement => {
+  const [isOpen, toggleOpen] = useState<boolean>(false);
+
+  const renderChevron = () => {
+    return (
+      <View>
+        <Image
+          resizeMode={'contain'}
+          style={[
+            {transform: [{rotate: isOpen ? '-90deg' : '90deg'}]},
+            styles.chevronIconStyle,
+          ]}
+          source={chevron}
+        />
+      </View>
+    );
+  };
+
   return (
-    <View>
+    <View style={styles.container}>
       <Text style={{fontSize: 12, height: 16}}>Group Plan</Text>
-      <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
+      <View style={{flexDirection: 'row'}}>
         <View
           style={{
             flexDirection: 'row',
             justifyContent: 'space-between',
-            borderWidth: 1,
-            borderColor: 'green',
             flex: 1,
           }}>
           <Text style={{fontSize: 16, height: 22}}>Charges</Text>
           <Text style={{fontSize: 16, height: 22}}>$20</Text>
         </View>
-        <View>
-          <CollapsiblePlan />
-        </View>
+        <TouchableOpacity onPress={() => toggleOpen(!isOpen)}>
+          {renderChevron()}
+        </TouchableOpacity>
       </View>
+      <View style={{flex: 1}}>
+        <AnimatedCollapsibleView show={isOpen} customStyle={{flex: 1}}>
+          <Text>Kuku</Text>
+        </AnimatedCollapsibleView>
+      </View>
+      <LineDivider width={'100%'} color={'grey'} marginTop={16} />
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    borderWidth: 3,
-    // justifyContent: 'space-between',
-    flexDirection: 'column',
     flex: 1,
+  },
+  chevronIconStyle: {
+    height: 12,
+    width: 9,
+    marginTop: 4,
+    marginLeft: 8,
   },
 });
