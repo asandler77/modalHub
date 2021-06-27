@@ -4,7 +4,7 @@ const initialState = {
   isModalVisible: false,
 };
 
-const countReducer = (state = initialState, action) => {
+const countReducer = (state = initialState, action: any) => {
   switch (action.type) {
     case TOGGLE_MODAL:
       return {
