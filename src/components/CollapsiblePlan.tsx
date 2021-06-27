@@ -45,7 +45,9 @@ export default (props: Props): ReactElement => {
         </TouchableOpacity>
       </View>
       <View style={styles.animatedContainer}>
-        <AnimatedCollapsibleView show={isOpen} customStyle={{flex: 1}}>
+        <AnimatedCollapsibleView
+          show={isOpen}
+          customStyle={{flex: 1, borderWidth: 1}}>
           <Text>{chargeType} Charge 1</Text>
           <Text>{chargeType} Charge 2</Text>
         </AnimatedCollapsibleView>

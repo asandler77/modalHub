@@ -1,4 +1,4 @@
-import {TOGGLE_MODAL} from '../../utils/constants';
+import {TOGGLE_MODAL} from '../../constants/Constants';
 
 export function changeToggleStatus(status: boolean) {
   return {

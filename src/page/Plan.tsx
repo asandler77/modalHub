@@ -2,7 +2,7 @@ import React, {ReactElement} from 'react';
 import {View, StyleSheet, Button, Modal, SafeAreaView} from 'react-native';
 import {changeToggleStatus} from '../state-management/actions/actions';
 import {useDispatch, useSelector} from 'react-redux';
-import CostDetails from './CostDetails';
+import CostDetails from '../components/CostDetails';
 
 export default (): ReactElement => {
   const {isModalVisible} = useSelector((state: any) => state.isModalVisible);

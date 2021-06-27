@@ -1,5 +1,5 @@
 import React from 'react';
-import Plan from './src/components/Plan';
+import Plan from './src/page/Plan';
 
 const App = () => {
   return <Plan />;
