@@ -1,10 +1,15 @@
 import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import {AnimatedCollapsibleView} from './AnimatedCollapsibleView';
 import React, {ReactElement, useState} from 'react';
+import {LineDivider} from './LineDivider';
 
 const chevron = require('../assets/images/right_arrow.png');
 
-export default (): ReactElement => {
+interface Props {
+  chargeType?: string;
+}
+export default (props: Props): ReactElement => {
+  const {chargeType} = props;
   const [isOpen, toggleOpen] = useState<boolean>(false);
 
   const renderChevron = () => {
@@ -30,8 +35,10 @@ export default (): ReactElement => {
             justifyContent: 'space-between',
             flex: 1,
           }}>
-          <Text style={{fontSize: 16, height: 22}}>Charges</Text>
-          <Text style={{fontSize: 16, height: 22}}>$20</Text>
+          <Text style={{fontSize: 16, height: 32, fontWeight: 'bold'}}>
+            Charges
+          </Text>
+          <Text style={{fontSize: 16, height: 32}}>$20</Text>
         </View>
         <TouchableOpacity onPress={() => toggleOpen(!isOpen)}>
           {renderChevron()}
@@ -39,10 +46,11 @@ export default (): ReactElement => {
       </View>
       <View style={styles.animatedContainer}>
         <AnimatedCollapsibleView show={isOpen} customStyle={{flex: 1}}>
-          <Text>Device Charge 1</Text>
-          <Text>Device Charge 2</Text>
+          <Text>{chargeType} Charge 1</Text>
+          <Text>{chargeType} Charge 2</Text>
         </AnimatedCollapsibleView>
       </View>
+      <LineDivider width={'100%'} color={'grey'} marginTop={16} />
     </>
   );
 };
