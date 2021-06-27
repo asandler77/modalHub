@@ -2,8 +2,9 @@ import React from 'react';
 import {Text, View, StyleSheet, TouchableOpacity} from 'react-native';
 import {changeToggleStatus} from '../state-management/actions/actions';
 import {useDispatch} from 'react-redux';
-import GroupPlan from './GroupPlan';
-import DevicePlan from './DevicePlan';
+import CollapsibleGroupPlan from './CollapsibleGroupPlan';
+import {LineDivider} from './LineDivider';
+import CollapsibleDevicePlan from './CollapsibleDevicePlan';
 
 interface Props {
   modalHeaderString?: string;
@@ -36,8 +37,10 @@ export default (props: Props) => {
       </TouchableOpacity>
       <Text style={styles.text}>{modalHeaderString}</Text>
       <Text style={{marginBottom: 52}}>Mobile share plus(SM) 9GB</Text>
-      <GroupPlan />
-      <DevicePlan />
+      <CollapsibleGroupPlan />
+      <LineDivider width={'100%'} color={'grey'} marginTop={16} />
+      <CollapsibleDevicePlan />
+      <LineDivider width={'100%'} color={'grey'} marginTop={16} />
     </View>
   );
 };

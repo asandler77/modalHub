@@ -1,8 +1,6 @@
-import React, {ReactElement, useState} from 'react';
-import {Text, View, StyleSheet, Image, TouchableOpacity} from 'react-native';
-import {LineDivider} from './LineDivider';
+import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import {AnimatedCollapsibleView} from './AnimatedCollapsibleView';
-import CollapsiblePlan from './CollapsiblePlan';
+import React, {ReactElement, useState} from 'react';
 
 const chevron = require('../assets/images/right_arrow.png');
 
@@ -23,10 +21,8 @@ export default (): ReactElement => {
       </View>
     );
   };
-
   return (
-    <View style={styles.container}>
-      <Text style={{fontSize: 12, height: 16}}>Group Plan</Text>
+    <>
       <View style={{flexDirection: 'row'}}>
         <View
           style={{
@@ -41,14 +37,19 @@ export default (): ReactElement => {
           {renderChevron()}
         </TouchableOpacity>
       </View>
-      <CollapsiblePlan isOpen={isOpen} />
-      <LineDivider width={'100%'} color={'grey'} marginTop={16} />
-    </View>
+      <View style={styles.animatedContainer}>
+        <AnimatedCollapsibleView show={isOpen} customStyle={{flex: 1}}>
+          <Text>Device Charge 1</Text>
+          <Text>Device Charge 2</Text>
+        </AnimatedCollapsibleView>
+      </View>
+    </>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
+  animatedContainer: {
+    marginTop: 8,
     flex: 1,
   },
   chevronIconStyle: {
